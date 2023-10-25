@@ -1,4 +1,4 @@
-import 'package:cook_book/screens/categories.dart';
+import 'package:cook_book/screens/tabs.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
@@ -24,7 +24,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
         theme: theme,
-        home: const CategoriesScreen()
+        home: const TabsScreen()
     );
   }
 }
