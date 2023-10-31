@@ -7,9 +7,8 @@ import 'package:flutter/material.dart';
 import '../models/meal.dart';
 
 class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({super.key, required this.onToggleFavorite, required this.availableMeals});
+  const CategoriesScreen({super.key, required this.availableMeals});
 
-  final void Function(Meal meal) onToggleFavorite;
   final List<Meal> availableMeals;
 
   void _selectCategory(BuildContext context, Category category) {
@@ -23,7 +22,7 @@ class CategoriesScreen extends StatelessWidget {
         builder: (ctx) => MealsScreen(
           title: category.title,
           meals: filteredMeals,
-          onToggleFavorite: onToggleFavorite,
+
         ),
       ),
     );
@@ -53,10 +52,10 @@ class CategoriesScreen extends StatelessWidget {
 
 Widget boxCategory() {
   return Container(
-    decoration: BoxDecoration(
+    decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.all(Radius.circular(20))),
-    margin: EdgeInsets.all(20),
-    child: Center(child: Text('data')),
+    margin: const EdgeInsets.all(20),
+    child: const Center(child: Text('data')),
   );
 }

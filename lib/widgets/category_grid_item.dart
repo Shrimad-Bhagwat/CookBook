@@ -19,7 +19,7 @@ class CategoryGridItem extends StatelessWidget {
       },
       child: Container(
         padding: const EdgeInsets.all(16),
-        decoration:BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)),
+        decoration:BoxDecoration(borderRadius: const BorderRadius.all(Radius.circular(20)),
           gradient: LinearGradient(
             colors: [
               category.color.withOpacity(0.55),

@@ -20,7 +20,7 @@ class MealItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       clipBehavior: Clip.hardEdge,
       elevation: 2,
@@ -68,7 +68,6 @@ class MealItem extends StatelessWidget {
                           MealItemTrait(icon: Icons.currency_rupee, label:affordabilityText),
                         ],
                       )
-
                     ],
                   ),
                 ),
